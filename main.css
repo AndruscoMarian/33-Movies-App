@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #373b69;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 2px solid #22254b;
+    font-family: inherit;
+    background-color: transparent;
+    color: white;
+
+}
+
+.search::placeholder{
+    color: rgb(125, 109, 185) ;
+}
+
+.search:focus{
+    background-color: #22254b;
+    outline: none ;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    background-color: #5561b9;
+    margin: 1rem;
+    position: relative;
+}
+
+.movie img{
+    width: 100%;
+}
+
+
+.noImg{
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 100%;
+    overflow: auto;
+}
+
+
+.movie-info{
+
+    padding: 0.5rem 1rem 1rem;
+    color: rgb(245, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+    letter-spacing: 1px;
+}
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #373b69;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+} 
+
+
+.movie-info span.green{
+    color: greenyellow;
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.overview{
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 0.5s ease-in;
+    max-height: 100%;
+    overflow: auto;
+}
+
+
+.overview h4{
+    margin-top: 0;
+}
+
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
